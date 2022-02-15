@@ -57,7 +57,7 @@ SELECT * FROM  tb_personagem WHERE poder_defesa BETWEEN 1000 AND 2000; -- visual
 SELECT * FROM tb_classe WHERE tipo_classe LIKE "%c%"; -- pesquisa de letra/termo específico
 
 -- UNIR 2 tabelas com INNER JOIN
-SELECT * FROM tb_personagem
+SELECT tipo_classe, habilidade FROM tb_personagem
 	INNER JOIN tb_classe ON tb_classe.id_classe = tb_personagem.fk_classe;
 
 -- pesquisar uma caracteristica em comum nas tabelas
