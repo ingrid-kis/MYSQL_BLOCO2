@@ -57,6 +57,6 @@ SELECT nome, tipo, preco FROM tb_produto
 	INNER JOIN tb_categoria ON tb_categoria.id_categoria = tb_produto.fk_categoria;
 
 --  select onde traga todos os Produtos de uma categoria específica
-SELECT nome, tipo, preco FROM tb_produto
+SELECT * FROM tb_produto
 	INNER JOIN tb_categoria ON tb_categoria.id_categoria = tb_produto.fk_categoria
 	WHERE tipo = "anti-inflamatório";
